@@ -11,7 +11,7 @@
 
 int main(int argc, char* argv[]) {
     QApplication a(argc, argv);
-    a.setWindowIcon(QIcon("icon.ico"));
+    a.setWindowIcon(QIcon(":/icon.ico"));
 
     // 自动根据系统设置切换黑白主题
     QPalette palette;

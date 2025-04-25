@@ -12,10 +12,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
 
-set(PROJECT_SOURCES
-        main.cpp
-        mainwindow.cpp
-        mainwindow.h
+# 自动收集src目录下所有cpp、h、qrc文件
+file(GLOB PROJECT_SOURCES
+    src/*.cpp
+    src/*.h
+    src/*.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
