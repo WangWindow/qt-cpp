@@ -1,12 +1,10 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include <QApplication>
 #include <QHBoxLayout>
 #include <QIcon>
 #include <QVBoxLayout>
 
-MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
-    ui->setupUi(this);
-
+MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) {
     setWindowTitle("简易聊天客户端");
     resize(500, 600);
     setWindowIcon(QIcon(":/icon.ico"));
@@ -72,5 +70,4 @@ void MainWindow::onSendButtonClicked() {
 }
 
 MainWindow::~MainWindow() {
-    delete ui;
 }
