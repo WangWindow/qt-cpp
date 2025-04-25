@@ -16,7 +16,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
 file(GLOB PROJECT_SOURCES
     src/*.cpp
     src/*.h
-    src/*.qrc
+    assets/*.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
