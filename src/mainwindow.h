@@ -1,5 +1,4 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#pragma once
 
 #include <QLineEdit>
 #include <QMainWindow>
@@ -21,4 +20,3 @@ private:
     QLineEdit*   messageInput;
     QPushButton* sendButton;
 };
-#endif // MAINWINDOW_H
